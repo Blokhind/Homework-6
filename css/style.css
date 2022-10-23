@@ -398,6 +398,11 @@ button {
 .clients-title {
   text-align: center;
   margin-bottom: 50px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
 }
 
 .clients-list {
@@ -542,7 +547,6 @@ button {
   color: #ffffff;
 }
 
-
 .input-title {
   font-weight: 700;
   font-size: 14px;
@@ -566,7 +570,7 @@ button {
   width: 358px;
   padding: 15px 16px;
   margin-right: 12px;
-  color: #f5f4fa;;
+  color: #f5f4fa;
 }
 
 .input-container input::placeholder {
@@ -597,15 +601,17 @@ button {
 }
 
 .input-img {
-  fill: currentColor; 
+  fill: currentColor;
 }
 
 .input-button:hover {
-  background-color: #3270a3;;
+  background-color: #3270a3;
 }
 
 @keyframes moving {
-  100% {transform: rotate(-360deg);}
+  100% {
+    transform: rotate(-360deg);
+  }
 }
 
 .input-button:hover > .input-img {
@@ -647,11 +653,12 @@ label {
 }
 
 .form-field input {
+  height: 40px;
   margin-top: 4px;
   padding: 11px;
+  padding-left: 42px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
-  padding-left: 42px;
   outline: none;
   color: #212121;
 }
@@ -700,7 +707,7 @@ textarea::placeholder {
   border-radius: 4px;
   outline: none;
   padding: 12px 16px;
-  color:  #212121;;
+  color: #212121;
 }
 
 .form-check {
@@ -727,7 +734,6 @@ textarea::placeholder {
   border: 2px solid black;
   border-radius: 4px;
   margin-right: 7px;
-  
 }
 
 .checkbox:checked + .checkbox-icon {
@@ -750,9 +756,12 @@ textarea::placeholder {
   display: block;
   background-color: #2196f3;
   color: #ffffff;
+  font-weight: 700;
+  letter-spacing: 0.06em;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border-color: transparent;
+  min-height: 50px;
   min-width: 200px;
   padding: 10px 52px;
   text-align: center;
@@ -920,7 +929,19 @@ textarea::placeholder {
   display: flex;
   align-items: center;
   cursor: pointer;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+   fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+.modal-close-icon {
+  fill: currentColor;
+}
+
+.modal-btn:hover,
+.modal-btn:focus {
+  color:  #2196f3;
+}
+
 .is-hidden {
   opacity: 0;
   visibility: hidden;
